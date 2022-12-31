@@ -1,13 +1,14 @@
 import { Button } from 'antd';
 import React, { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import { Link } from 'react-router-dom';
+import reactLogo from '../../assets/react.svg';
 import Logo from './Logo';
 
 const Welcome = () => {
   const [count, setCount] = useState(0);
   return (
     <div className="flex flex-1 place-items-center">
-      <div className="mx-auto mt-20 max-w-4xl  px-6 text-center">
+      <div className="mx-auto mt-20 max-w-4xl px-6 text-center">
         <div className="flex justify-center">
           <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
             <Logo src="/vite.svg" alt="Vite logo" shadowColor="#646cffaa" />
@@ -28,6 +29,12 @@ const Welcome = () => {
         <p className="my-4 text-center text-base font-normal text-gray-400">
           Click on the Vite and React logos to learn more
         </p>
+        <div>
+          See details about{' '}
+          <Link to={'/people/1'} className="text-violet-600 hover:text-violet-400">
+            Luke Skywalker
+          </Link>
+        </div>
       </div>
     </div>
   );

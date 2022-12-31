@@ -1,7 +1,8 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import AppFooter from './AppFooter';
 import AppHeader from './AppHeader';
-import Welcome from './Welcome';
+import PersonDetailsPage from './pages/PersonDetailsPage/PersonDetailsPage';
+import Welcome from './pages/Welcome/Welcome';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <AppHeader />
         <Routes>
           <Route path="/" element={<Welcome />} />
+          <Route path="/people/:id" element={<PersonDetailsPage />} />
         </Routes>
         <AppFooter />
       </div>
