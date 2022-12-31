@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "prettier": "prettier --write './**/*.{ts,tsx,js,jsx,mjs,json,css,less,scss,html}'",
     "eslint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "eslint:fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix"
   },
@@ -19,6 +20,7 @@
     "@vitejs/plugin-react": "^3.0.0",
     "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1",
+    "prettier": "^2.8.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
   }
