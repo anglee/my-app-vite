@@ -11,3 +11,13 @@ body,
 .ant-btn .anticon {
   vertical-align: 0.125rem;
 }
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+code {
+  /*font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;*/
+  font-family: monospace;
+}
