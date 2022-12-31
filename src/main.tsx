@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppWithConfigs from './AppWithConfigs';
+import AppWithConfigs from './App/AppWithConfigs';
 import 'antd/dist/reset.css';
 import './index.css';
 

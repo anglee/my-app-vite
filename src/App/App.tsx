@@ -1,12 +1,14 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import PersonDetailsPage from '../pages/PersonDetailsPage/PersonDetailsPage';
+import Welcome from '../pages/Welcome/Welcome';
 import AppFooter from './AppFooter';
 import AppHeader from './AppHeader';
-import PersonDetailsPage from './pages/PersonDetailsPage/PersonDetailsPage';
-import Welcome from './pages/Welcome/Welcome';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="flex min-h-screen flex-col antialiased">
         <AppHeader />
         <Routes>
